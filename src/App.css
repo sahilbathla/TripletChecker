@@ -1,0 +1,104 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.text-input {
+  position: relative;
+  margin-top: 50px;
+}
+
+.text-input input[type="text"] {
+  display: inline-block;
+  width: 500px;
+  height: 40px;
+  box-sizing: border-box;
+  outline: none;
+  border: 1px solid lightgray;
+  border-radius: 3px;
+  padding: 10px 10px 10px 120px;
+  -webkit-transition: all 0.1s ease-out;
+  transition: all 0.1s ease-out;
+}
+
+.text-input input[type="text"] + label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  height: 40px;
+  line-height: 40px;
+  color: white;
+  border-radius: 3px 0 0 3px;
+  padding: 0 20px;
+  background: #050918ec;  
+}
+
+.custom-button {
+  margin-left: -0.5rem;
+  margin-right: -0.5rem;
+}
+.custom-button button {
+  background: white;
+  border: 0.125em solid black;
+  cursor: pointer;
+  font: 600 1.2rem/1.25 'Montserrat', sans-serif;
+  margin: 0.75rem;
+  padding: 0.2em 0.5em;
+  position: relative;
+  text-transform: uppercase;
+}
+.custom-button button:before, .custom-button button:after {
+  content: '';
+  position: absolute;
+  transition: all 0.125s ease-in-out;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+}
+
+.success {
+  color: #0ebd2bec;
+  font-weight: 500;
+}
+
+.error {
+  color: #c70808ec;
+  font-weight: 500;
+}
