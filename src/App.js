@@ -19,7 +19,12 @@ function App() {
   }
 
   const handleCheck = () => {
-    setIsTriangularTriplet(helpers.hasTriangularTriplet(array))
+    try {
+      setIsTriangularTriplet(helpers.hasTriangularTriplet(array))
+    } catch (e) {
+      alert(e);
+    }
+
     setClicked(true)
   }
 
